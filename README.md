@@ -17,19 +17,14 @@ Lab 0 giúp sinh viên:
 ## Bước 1. Tạo môi trường
 ### Cách 1: dùng venv
 ```bash
-python -m venv csc4005_env
+conda create -n csc4005-dl python=3.10 -y
 ```
 
 Kích hoạt môi trường:
 
 - Windows:
 ```bash
-csc4005_env\Scripts\activate
-```
-
-- macOS / Linux:
-```bash
-source csc4005_env/bin/activate
+conda activate csc4005-dl
 ```
 
 ## Bước 2. Cài thư viện
@@ -39,7 +34,7 @@ pip install -r requirements.txt
 
 ## Bước 3. Kiểm tra môi trường
 ```bash
-python check_env.py
+python src/env_check.py
 ```
 
 ## Bước 4. Chạy smoke-test pipeline
